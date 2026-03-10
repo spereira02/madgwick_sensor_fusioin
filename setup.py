@@ -19,8 +19,8 @@ setup(
     zip_safe=True,
     maintainer='sebi',
     maintainer_email='spereira@ethz.ch',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='This launch file launches a microRos agent, which is used to interface a microcontroller with a pi/PC. It launches 3 nodes at once, the microRos agent, the filter node which uses the madgwick filter to estimate the orientation of an IMU and an Rviz application to vizualize the results',
+    license='Apache License 2.0',
     extras_require={
         'test': [
             'pytest',

@@ -11,7 +11,7 @@ def generate_launch_description():
         Node(
             package='imu_filter_madgwick',
             executable='imu_filter_madgwick_node',
-            name='imu_filter_node',
+            name='imu_filter',
             output='screen',
             parameters=[config],
             
