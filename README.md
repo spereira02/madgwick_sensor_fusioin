@@ -14,6 +14,16 @@ This repository provides:
 
 The goal is to demonstrate how low-level embedded sensor data can be integrated into a distributed robotics system using ROS 2.
 
+## System Architecture
+
+<p align="center">
+  <img src="docs/architecture.png" width="850"/>
+</p>
+
+<p align="center">
+End-to-end IMU data pipeline: an ESP32 reads an ICM-20948 sensor via I²C, publishes measurements through a micro-ROS client over serial (XRCE-DDS), and a ROS 2 system performs orientation estimation using the Madgwick filter and visualizes the result in RViz.
+</p>
+
 This repository therefore represents **Step 2 of the IMU processing pipeline**.
 
 ➡️ The full system architecture — including firmware, ROS 2 integration, and hardware setup — is documented in the main project repository:  
