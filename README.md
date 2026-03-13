@@ -18,31 +18,13 @@ https://github.com/spereira02/esp32_firmware
 
 ## System Architecture
 
-```
-ICM-20948 IMU
-      │
-      ▼
-ESP32 Firmware
-(micro-ROS client)
-      │
-      ▼
-micro-ROS Agent
-(serial bridge)
-      │
-      ▼
-ROS 2 Topics
-(/imu/data_raw, /imu/mag)
-      │
-      ▼
-Madgwick Filter
-(imu_filter_madgwick)
-      │
-      ▼
-Orientation Estimate
-      │
-      ▼
-RViz Visualization
-```
+<p align="center">
+  <img src="docs/architecture.png" width="850"/>
+</p>
+
+<p align="center">
+End-to-end IMU data pipeline: an ESP32 reads an ICM-20948 sensor via I²C, publishes measurements through a micro-ROS client over serial (XRCE-DDS), and a ROS 2 system performs orientation estimation using the Madgwick filter and visualizes the result in RViz.
+</p>
 
 ---
 
