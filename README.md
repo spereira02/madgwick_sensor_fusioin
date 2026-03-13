@@ -1,3 +1,4 @@
+Part of the Fullstack IMU pipeline project: [**https://github.com/spereira02/Fullstack_imu_filter**]
 ## Overview
 
 This repository implements the **ROS 2 side of an end-to-end IMU processing pipeline**.
