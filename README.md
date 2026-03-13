@@ -8,15 +8,6 @@ This repository implements the **ROS 2 side of an IMU processing pipeline**.
 Raw IMU measurements are produced by an **ESP32 micro-ROS client** (see the firmware repository) and published to the ROS 2 graph via the **micro-ROS Agent**.
 
 This package launches the **Madgwick orientation filter**, which estimates IMU orientation from accelerometer, gyroscope, and magnetometer data. The resulting orientation is visualized in **RViz**.
-
-This repository therefore represents **Step 2 of the IMU processing pipeline**.
-
-The full system — including ROS 2 integration, sensor fusion using the **Madgwick filter**, and RViz visualization — is documented in the main project repository:  
-**[https://github.com/spereira02/Fullstack_imu_filter]**
-
-Firmware repository:  
-https://github.com/spereira02/esp32_firmware
-
 ---
 
 ## System Architecture
@@ -28,6 +19,14 @@ https://github.com/spereira02/esp32_firmware
 <p align="center">
 End-to-end IMU data pipeline: an ESP32 reads an ICM-20948 sensor via I²C, publishes measurements through a micro-ROS client over serial (XRCE-DDS), and a ROS 2 system performs orientation estimation using the Madgwick filter and visualizes the result in RViz.
 </p>
+
+This repository therefore represents **Step 2 of the IMU processing pipeline**.
+
+The full system — including ROS 2 integration, sensor fusion using the **Madgwick filter**, and RViz visualization — is documented in the main project repository:  
+**[https://github.com/spereira02/Fullstack_imu_filter]**
+
+Firmware repository:  
+**[https://github.com/spereira02/esp32_firmware]**
 
 ---
 
