@@ -1,9 +1,10 @@
 imu_filter:
   ros__parameters:
-    use_mag: true          
+    use_mag: true               
     publish_tf: true        # Let the filter tell ROS how the IMU is rotated
-    fixed_frame: "odom"    
-    gain: 0.1              # How fast to react (0.0 to 1.0)
+    fixed_frame: "odom" 
+    world_frame: "nwu"   
+    gain: 0.05              # how much we rely on magnetometer and accelerometer data (0.0 - 1.0)
     zeta: 0.0               # Gyro drift compensation
     mag_bias_x: 0.0
     mag_bias_y: 0.0
