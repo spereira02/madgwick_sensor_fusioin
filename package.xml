@@ -3,7 +3,7 @@
 <package format="3">
   <name>imu_madgwick</name>
   <version>0.0.0</version>
-  <description>Takes in raw Imu data and return the orientation in quaternions</description>
+  <description>Takes in raw Imu data (acc+gyro) and Magnetometer readings -> returns the orientation in quaternions</description>
   <maintainer email="spereira@ethz.ch">sebi</maintainer>
   <license>Apache License 2.0</license>
 
